@@ -1,3 +1,19 @@
+Joda-Time (VictorOps edition with updated tzinfo)
+---------
+
+This is a fork of the official Joda-Time project updated with the latest tzinfo database.  The latest tzinfo database can be downloaded from http://www.iana.org/time-zones
+
+How to keep this fork up to date:
+
+* Download the latest tzdata file from http://www.iana.org/time-zones. Note the version (i.e. 2016f).
+* Update the version in src/conf/MANIFEST.MF to match the latest version (i.e. 2.9.4-2016f).
+* Update version and tz.database.version in pom.xml to match.
+* Untar the downloaded tzdata file into src/main/java/org/joda/time/tz/src, overwriting the existing files.  Any new files can be ignored and should be deleted (git clean -f -n; -n will show you which files would be deleted, run again without -n to delete them).
+* Test building the joda-time jar using 'mvn clean test package'.  You may need to install maven (brew install maven).
+* If everything looks good, commit your changes.
+
+
+
 Joda-Time
 ---------
 
