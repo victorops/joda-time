@@ -727,7 +727,7 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-        <name>artifactory_release/name>
+        <name>artifactory_release</name>
         <url>${env.ARTIFACTORY_LOCATION}victorops_local</url>
     </repository>
     <snapshotRepository>
