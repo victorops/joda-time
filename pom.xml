@@ -728,12 +728,12 @@
     <repository>
         <id>central</id>
         <name>artifactory_release</name>
-        <url>${env.ARTIFACTORY_LOCATION}victorops_local</url>
+        <url>${env.ARTIFACTORY_LOCATION}artifactory/victorops_local</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>artifactory_snapshots</name>
-        <url>${env.ARTIFACTORY_LOCATION}victorops_local</url>
+        <url>${env.ARTIFACTORY_LOCATION}artifactory/victorops_local</url>
     </snapshotRepository>
 </distributionManagement>
 
