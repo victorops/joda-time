@@ -723,19 +723,18 @@
   </reporting>
 
   <!-- ==================================================================== -->
-
-<distributionManagement>
+  <distributionManagement>
     <repository>
-        <id>central</id>
-        <name>artifactory_release</name>
-        <url>${env.ARTIFACTORY_LOCATION}artifactory/victorops_local</url>
+      <id>central</id>
+      <name>artifactory_release</name>
+      <url>${env.ARTIFACTORY_LOCATION}artifactory/victorops_local</url>
     </repository>
     <snapshotRepository>
-        <id>snapshots</id>
-        <name>artifactory_snapshots</name>
-        <url>${env.ARTIFACTORY_LOCATION}artifactory/victorops_local</url>
+      <id>snapshots</id>
+      <name>artifactory_snapshots</name>
+      <url>${env.ARTIFACTORY_LOCATION}artifactory/victorops_local</url>
     </snapshotRepository>
-</distributionManagement>
+  </distributionManagement>
 
   <!-- ==================================================================== -->
   <profiles>
